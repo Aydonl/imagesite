@@ -11,6 +11,7 @@ from application import application
 
 
 if __name__ == "__main__":
+  tornado.options.parse_command_line()
   application.listen(options.port)
   print 'Development server is running at http://127.0.0.1:%s/' % options.port
   print 'Quit the server with CONTROL-C'

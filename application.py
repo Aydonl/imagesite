@@ -7,6 +7,8 @@ import os
 SETTINGS = dict(
 template_path=os.path.join(os.path.dirname(__file__), "templates"),
 static_path=os.path.join(os.path.dirname(__file__), "static"),
+login_url="/login",
+cookie_secret="mAPwHLl0XApRNACf6S",
 )
 
 application = tornado.web.Application(
